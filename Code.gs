@@ -13,7 +13,7 @@ const ARABIC_ALPHA   = ['الف','ب','ج','د','هـ','و','ز','ح','ط','ی',
 // === MENU ===
 function onOpen() {
   DocumentApp.getUi()
-    .createMenu('Farsi Tools')
+    .createMenu('FA_Docs')
     .addItem('شماره‌گذار', 'openSidebar')
     .addToUi();
 }
@@ -80,3 +80,4 @@ function applyPersianNumbering(data) {
 
   return 'انجام شد';
 }
+
