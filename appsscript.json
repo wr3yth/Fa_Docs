@@ -1,0 +1,33 @@
+{
+  "timeZone": "Asia/Tehran",
+  "dependencies": {},
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/documents.currentonly",
+    "https://www.googleapis.com/auth/script.container.ui"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Farsi Tools",
+      "logoUrl": "https://imgur.com/a/FDc9dre",
+      "layoutProperties": {
+        "primaryColor": "#202124",
+        "secondaryColor": "#303134"
+      },
+      "homepageTrigger": {
+        "runFunction": "openSidebar",
+        "enabled": true
+      }
+    },
+    "docs": {
+      "homepageTrigger": {
+        "runFunction": "openSidebar",
+        "enabled": true
+      },
+      "onFileScopeGrantedTrigger": {
+        "runFunction": "onOpen"
+      }
+    }
+  }
+}

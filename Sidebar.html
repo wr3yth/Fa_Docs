@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>شماره‌گذار</title>
+<style>
+  body {
+    background: #202124;
+    color: #fff;
+    font-family: system-ui, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 12px;
+  }
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  label {
+    font-size: 12px;
+    color: #bbb;
+  }
+  input, select, button {
+    background: #303134;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 6px 8px;
+    transition: background 0.2s;
+  }
+  input { width: 160px; text-align: center; }
+  select { width: 170px; text-align: center; }
+  button {
+    background: #3c4043;
+    cursor: pointer;
+    width: 120px;
+    transition: background 0.2s;
+  }
+  button:hover { background: #5f6368; }
+  #status {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 6px;
+    text-align: center;
+    height: 14px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div>
+      <label for="prefix">پیشوند:</label><br>
+      <input id="prefix" type="text" placeholder="مثلاً (« یا () )" value="">
+    </div>
+
+    <div>
+      <label for="style">شیوه فهرست‌بندی:</label><br>
+      <select id="style">
+        <option value="persian">۱,۲,۳</option>
+        <option value="faAlpha">ا,ب,پ</option>
+        <option value="arAlpha">الف,ب,ج</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="suffix">پسوند:</label><br>
+      <input id="suffix" type="text" value="." placeholder=".">
+    </div>
+
+    <button id="apply">اعمال</button>
+    <div id="status"></div>
+  </div>
+
+<script>
+document.getElementById('apply').onclick = () => {
+  const data = {
+    style:  document.getElementById('style').value,
+    prefix: document.getElementById('prefix').value,
+    suffix: document.getElementById('suffix').value
+  };
+  const status = document.getElementById('status');
+  status.textContent = 'در حال اعمال...';
+  const start = Date.now();
+
+  google.script.run
+    .withSuccessHandler(msg => {
+      const elapsed = Date.now() - start;
+      status.textContent = msg + ` (${elapsed}ms)`;
+      setTimeout(() => { status.textContent = ''; }, 2000);
+    })
+    .withFailureHandler(err => {
+      status.textContent = 'خطا: ' + err.message;
+    })
+    .applyPersianNumbering(data);
+};
+</script>
+</body>
+</html>
