@@ -86,11 +86,17 @@ MIT License © 2025 — Developed by Ali Ghorbani
 ---
 
 ### 🧩شیوه‌ی استفاده
-1. وارد [script.google.com](https://script.google.com/) شوید.  
-2. یک پروژه جدید بسازید و فایل‌های موجود در این مخزن را (Code.gs، Sidebar.html و appsscript.json) در آن قرار دهید.  
-3. پروژه را ذخیره کنید.  
-4. در Google Docs از منوی **Extensions → Apps Script** تابع `onOpen` را اجرا کنید.  
-5. حالا از منوی **Farsi Tools** می‌توانید نوار کناری ابزار شمار‌گذار را باز کنید.
+1. در Google Docs از منوی **Extensions → Apps Script** را باز کنید.
+![first step](guide_0.png)
+2. وارد چنین صفحه‌ای می‌شوید:
+![second step](guide_1.png)
+می‌بینید که به صورت پیش‌فرض فایل code.gs باز است. محتوای آن را با محتوای موجود در code.gs که خدمت شما آماده کرده‌ام جایگزین کنید.
+
+4. در همان صفحه گزینه‌ی + را بزنید و فایلی به نام Slidebar.html ایجاد کرده و محتوای آن را با Slidebar.html که خدمت شما آماده کرده‌ام جایگزین کنید 
+5. گزینه‌ی Deploy را بزنید. 
+6. پروژه‌ی خود در گوگل داگز را رفرش کنید؛ در صورت مشاهده‌ی Fa_Docs در منوی ابزار در کنار help به شکل زیر:
+![third step](guide_2.png)
+عملیات با موفقیت نجام شده است!
 
 ---
  
