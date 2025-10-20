@@ -1,4 +1,4 @@
-# 🇮🇷 Farsi Tools | ابزار فارسی
+# 🇮🇷 Fa_Docs | گوگل فاکس
 
 A Google Docs add-on that brings **Persian (Farsi) support** and typography tools directly into Google Docs.  
 Currently, Farsi Tools provides **advanced Persian numbering** for lists and documents — with full right-to-left compatibility and customizable styles.
@@ -62,7 +62,7 @@ MIT License © 2025 — Developed by Ali Ghorbani
 ## 🇮🇷 فارسی
 
 ### معرفی
-افزونه‌ی **Farsi Tools** برای Google Docs، مجموعه‌ای از ابزارهای فارسی‌نویسی و ویرایش متن را به محیط گوگل داکس اضافه می‌کند.  
+افزونه‌ی **FA_Docs** برای Google Docs، مجموعه‌ای از ابزارهای فارسی‌نویسی و ویرایش متن را به محیط گوگل داکس اضافه می‌کند.  
 در حال حاضر تنها ابزار فعال، **شمار‌گذار فارسی** است، اما در به‌روزرسانی‌های آینده ابزارهای بیشتری افزوده خواهند شد.
 
 ---
