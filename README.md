@@ -3,6 +3,8 @@
 A Google Docs add-on that brings **Persian (Farsi) support** and typography tools directly into Google Docs.  
 Currently, Farsi Tools provides **advanced Persian numbering** for lists and documents — with full right-to-left compatibility and customizable styles.
 
+![Fa_Docs logo](Fa_Docs.png)
+
 > ✨ More tools for Persian writers and editors will be added in future updates!
 
 ---
